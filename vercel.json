@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [{ "src": "package.json", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "http://localhost:${PORT}" }],
+  "env": {
+    "HOST": "0.0.0.0",
+    "PORT": "${PORT}",
+    "APP_KEYS": "DpQ3vz4tvJErbcGgv04Guw==,rB1SnEEOQR9iY3mnkoDruw==,rxhxvqgrkI/4PcNpxLmJbQ==,8W99qusmsMc/B7G/Gztfug==",
+    "API_TOKEN_SALT": "9nrFbMAyJGytgjC/Z7Eodg==",
+    "ADMIN_JWT_SECRET": "GMGP2sNAwl/RvZhXnWPojA==",
+    "TRANSFER_TOKEN_SALT": "urEy8TsLuNJEP5KMdBaOdw==",
+    "DATABASE_CLIENT": "sqlite",
+    "DATABASE_FILENAME": ".tmp/data.db",
+    "JWT_SECRET": "cEbfRWUrUMnujgWQXuzXDg==",
+    "CLOUDINARY_NAME": "dcdvmj0q4",
+    "CLOUDINARY_KEY": "888142775625353",
+    "CLOUDINARY_SECRET": "z-AygUH5T6nN9rkeS8WF8wIdG4c"
+  }
+}
